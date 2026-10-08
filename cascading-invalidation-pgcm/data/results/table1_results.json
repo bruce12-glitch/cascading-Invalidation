@@ -1,0 +1,18 @@
+{
+  "bounded_checks": 32768,
+  "traces": 2000,
+  "events": 6000,
+  "retraction_events": 6000,
+  "exact": 6000,
+  "false_invalidations": 0,
+  "missed_invalidations": 0,
+  "false_activations": 0,
+  "missed_activations": 0,
+  "gold_changed": 6000,
+  "pred_changed": 6000,
+  "counter_visits": 26000,
+  "eager_scans": 66000,
+  "work_ratio": 0.3939393939393939,
+  "CER": 1.0,
+  "CEP": 1.0
+}

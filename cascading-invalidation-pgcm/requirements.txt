@@ -1,0 +1,6 @@
+# No third-party packages required (Python 3.10+ standard library only).
+#
+# reproduce_all.py uses only the standard library (json, itertools, random,
+# pathlib, collections, dataclasses). The full pgcm_experiments suite in the
+# companion repository additionally requires numpy>=1.26,<3 for dense
+# retrieval measurements, which this artifact does not run.

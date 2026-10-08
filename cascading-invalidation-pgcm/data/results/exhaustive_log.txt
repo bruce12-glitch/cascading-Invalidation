@@ -1,0 +1,6 @@
+PG-CM cascading-invalidation reproduction log
+bounded four-node configurations checked: 32768
+traces replayed: 2000
+retraction events: 6000
+exact events: 6000
+false invalidations: 0
