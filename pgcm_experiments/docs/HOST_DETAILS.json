@@ -1,0 +1,9 @@
+{
+  "cpu_model_reported_by_host": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpu_count_reported": 9,
+  "affinity_cpu_count": 9,
+  "cgroup_cpu_max": "800000 100000",
+  "cgroup_memory_max": "8589934592",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "limitations": "Container environment; host model and affinity do not guarantee exclusive hardware access. No GPU used."
+}

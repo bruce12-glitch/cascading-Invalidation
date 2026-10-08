@@ -1,0 +1,4 @@
+# Kaggle supplies the CUDA-enabled torch build. Do not replace it unless required.
+numpy>=1.26,<3
+sentence-transformers>=3,<6
+huggingface-hub>=0.25,<2

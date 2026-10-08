@@ -1,0 +1,6 @@
+{
+  "provider": "command",
+  "command": ["python", "my_model_driver.py"],
+  "model": "configure-exact-local-weights-revision",
+  "timeout_seconds": 120
+}

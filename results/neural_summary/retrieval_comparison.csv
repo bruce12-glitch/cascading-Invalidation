@@ -1,0 +1,25 @@
+source,embedding,k,method,CER,CEP,CLR,VER,retrieval_coverage,SCF,access_violation_rate
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,5,pgcm_oracle,1.0,1.0,0.0,1.0,0.8147272727272727,0.0,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,5,local_root_update_control,0.0,,0.7279545454545454,1.0,1.0,0.49341383729118804,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,5,descendant_pruning_control,0.8333333333333334,0.8333333333333334,0.0,0.8333333333333334,0.8066363636363636,0.0,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,5,no_eligibility_gate,1.0,1.0,0.966,1.0,1.0,0.4988,0.10228181818181818
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,10,pgcm_oracle,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,10,local_root_update_control,0.0,,0.9966818181818182,1.0,1.0,0.4253667110070483,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,10,descendant_pruning_control,0.8333333333333334,0.8333333333333334,0.0,0.8333333333333334,1.0,0.0,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,10,no_eligibility_gate,1.0,1.0,1.0,1.0,1.0,0.42605454545454546,0.13999545454545453
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,20,pgcm_oracle,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,20,local_root_update_control,0.0,,1.0,1.0,1.0,0.3786407766990291,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,20,descendant_pruning_control,0.8333333333333334,0.8333333333333334,0.0,0.8333333333333334,1.0,0.0,0.0
+neural,BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true,20,no_eligibility_gate,1.0,1.0,1.0,1.0,1.0,0.3986013986013986,0.15384615384615385
+hash,blake2-token-counts-v1,5,pgcm_oracle,1.0,1.0,0.0,1.0,0.8452727272727273,0.0,0.0
+hash,blake2-token-counts-v1,5,local_root_update_control,0.0,,0.6909545454545455,1.0,1.0,0.4383563086449656,0.0
+hash,blake2-token-counts-v1,5,descendant_pruning_control,0.8333333333333334,0.8333333333333334,0.0,0.8333333333333334,0.8087272727272727,0.0,0.0
+hash,blake2-token-counts-v1,5,no_eligibility_gate,1.0,1.0,0.9636818181818182,1.0,1.0,0.4786,0.03656363636363636
+hash,blake2-token-counts-v1,10,pgcm_oracle,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+hash,blake2-token-counts-v1,10,local_root_update_control,0.0,,0.9997727272727273,1.0,1.0,0.3986320214404332,0.0
+hash,blake2-token-counts-v1,10,descendant_pruning_control,0.8333333333333334,0.8333333333333334,0.0,0.8333333333333334,1.0,0.0,0.0
+hash,blake2-token-counts-v1,10,no_eligibility_gate,1.0,1.0,1.0,1.0,1.0,0.4335409090909091,0.06770909090909091
+hash,blake2-token-counts-v1,20,pgcm_oracle,1.0,1.0,0.0,1.0,1.0,0.0,0.0
+hash,blake2-token-counts-v1,20,local_root_update_control,0.0,,1.0,1.0,1.0,0.3786407766990291,0.0
+hash,blake2-token-counts-v1,20,descendant_pruning_control,0.8333333333333334,0.8333333333333334,0.0,0.8333333333333334,1.0,0.0,0.0
+hash,blake2-token-counts-v1,20,no_eligibility_gate,1.0,1.0,1.0,1.0,1.0,0.3986013986013986,0.15384615384615385

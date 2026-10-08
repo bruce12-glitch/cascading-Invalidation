@@ -1,0 +1,502 @@
+{
+  "candidate_budget": "K, no refill",
+  "embedding": "BAAI/bge-small-en-v1.5@5c38ec7c405ec4b44b94cc5a9bb96e735b38267a;query_prefix='Represent this sentence for searching relevant passages: ';normalized=true",
+  "limitations": "Generated explicit-rule fixtures, supplied provenance, exact cosine search. Controls are not MemGPT, Zep, A-MEM, PACMI, or MemTX.",
+  "query_method_k_evaluations": 336000,
+  "status": "measured_synthetic_integration",
+  "summaries": [
+    {
+      "k": 5,
+      "method": "pgcm_oracle",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "SCF": {
+          "denominator": 43881,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 43881,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 17924,
+          "value": 0.8147272727272727
+        }
+      }
+    },
+    {
+      "k": 5,
+      "method": "local_root_update_control",
+      "metrics": {
+        "CEP": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 16015,
+          "value": 0.7279545454545454
+        },
+        "SCF": {
+          "denominator": 86621,
+          "numerator": 42740,
+          "value": 0.49341383729118804
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 86621,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 5,
+      "method": "descendant_pruning_control",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "SCF": {
+          "denominator": 40605,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "access_violation_rate": {
+          "denominator": 40605,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 17746,
+          "value": 0.8066363636363636
+        }
+      }
+    },
+    {
+      "k": 5,
+      "method": "no_eligibility_gate",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 21252,
+          "value": 0.966
+        },
+        "SCF": {
+          "denominator": 110000,
+          "numerator": 54868,
+          "value": 0.4988
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 110000,
+          "numerator": 11251,
+          "value": 0.10228181818181818
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 10,
+      "method": "pgcm_oracle",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "SCF": {
+          "denominator": 95469,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 95469,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 10,
+      "method": "local_root_update_control",
+      "metrics": {
+        "CEP": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 21927,
+          "value": 0.9966818181818182
+        },
+        "SCF": {
+          "denominator": 166139,
+          "numerator": 70670,
+          "value": 0.4253667110070483
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 166139,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 10,
+      "method": "descendant_pruning_control",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "SCF": {
+          "denominator": 88234,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "access_violation_rate": {
+          "denominator": 88234,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 10,
+      "method": "no_eligibility_gate",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        },
+        "SCF": {
+          "denominator": 220000,
+          "numerator": 93732,
+          "value": 0.42605454545454546
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 220000,
+          "numerator": 30799,
+          "value": 0.13999545454545453
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 20,
+      "method": "pgcm_oracle",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "SCF": {
+          "denominator": 128000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 128000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 20,
+      "method": "local_root_update_control",
+      "metrics": {
+        "CEP": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        },
+        "SCF": {
+          "denominator": 206000,
+          "numerator": 78000,
+          "value": 0.3786407766990291
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 206000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 20,
+      "method": "descendant_pruning_control",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "SCF": {
+          "denominator": 120000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 10000,
+          "value": 0.8333333333333334
+        },
+        "access_violation_rate": {
+          "denominator": 120000,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    },
+    {
+      "k": 20,
+      "method": "no_eligibility_gate",
+      "metrics": {
+        "CEP": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "CLR": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        },
+        "SCF": {
+          "denominator": 286000,
+          "numerator": 114000,
+          "value": 0.3986013986013986
+        },
+        "VER": {
+          "denominator": 12000,
+          "numerator": 12000,
+          "value": 1.0
+        },
+        "access_violation_rate": {
+          "denominator": 286000,
+          "numerator": 44000,
+          "value": 0.15384615384615385
+        },
+        "retrieval_coverage": {
+          "denominator": 22000,
+          "numerator": 22000,
+          "value": 1.0
+        }
+      }
+    }
+  ],
+  "trace_count": 2000
+}

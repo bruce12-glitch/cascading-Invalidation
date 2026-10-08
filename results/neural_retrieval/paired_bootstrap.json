@@ -1,0 +1,272 @@
+[
+  {
+    "ci95": [
+      -0.7311818181818182,
+      -0.7247727272727272
+    ],
+    "difference_A_minus_B": -0.7279545454545454,
+    "independent_traces": 2000,
+    "k": 5,
+    "method_a": "pgcm_oracle",
+    "method_b": "local_root_update_control",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 5,
+    "method_a": "pgcm_oracle",
+    "method_b": "local_root_update_control",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 5,
+    "method_a": "pgcm_oracle",
+    "method_b": "descendant_pruning_control",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.16666666666666663,
+      0.16666666666666663
+    ],
+    "difference_A_minus_B": 0.16666666666666663,
+    "independent_traces": 2000,
+    "k": 5,
+    "method_a": "pgcm_oracle",
+    "method_b": "descendant_pruning_control",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      -0.9679090909090909,
+      -0.9640454545454545
+    ],
+    "difference_A_minus_B": -0.966,
+    "independent_traces": 2000,
+    "k": 5,
+    "method_a": "pgcm_oracle",
+    "method_b": "no_eligibility_gate",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 5,
+    "method_a": "pgcm_oracle",
+    "method_b": "no_eligibility_gate",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      -0.9974090909090909,
+      -0.9959090909090909
+    ],
+    "difference_A_minus_B": -0.9966818181818182,
+    "independent_traces": 2000,
+    "k": 10,
+    "method_a": "pgcm_oracle",
+    "method_b": "local_root_update_control",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 10,
+    "method_a": "pgcm_oracle",
+    "method_b": "local_root_update_control",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 10,
+    "method_a": "pgcm_oracle",
+    "method_b": "descendant_pruning_control",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.16666666666666663,
+      0.16666666666666663
+    ],
+    "difference_A_minus_B": 0.16666666666666663,
+    "independent_traces": 2000,
+    "k": 10,
+    "method_a": "pgcm_oracle",
+    "method_b": "descendant_pruning_control",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      -1.0,
+      -1.0
+    ],
+    "difference_A_minus_B": -1.0,
+    "independent_traces": 2000,
+    "k": 10,
+    "method_a": "pgcm_oracle",
+    "method_b": "no_eligibility_gate",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 10,
+    "method_a": "pgcm_oracle",
+    "method_b": "no_eligibility_gate",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      -1.0,
+      -1.0
+    ],
+    "difference_A_minus_B": -1.0,
+    "independent_traces": 2000,
+    "k": 20,
+    "method_a": "pgcm_oracle",
+    "method_b": "local_root_update_control",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 20,
+    "method_a": "pgcm_oracle",
+    "method_b": "local_root_update_control",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 20,
+    "method_a": "pgcm_oracle",
+    "method_b": "descendant_pruning_control",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.16666666666666663,
+      0.16666666666666663
+    ],
+    "difference_A_minus_B": 0.16666666666666663,
+    "independent_traces": 2000,
+    "k": 20,
+    "method_a": "pgcm_oracle",
+    "method_b": "descendant_pruning_control",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      -1.0,
+      -1.0
+    ],
+    "difference_A_minus_B": -1.0,
+    "independent_traces": 2000,
+    "k": 20,
+    "method_a": "pgcm_oracle",
+    "method_b": "no_eligibility_gate",
+    "metric": "CLR",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  },
+  {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "difference_A_minus_B": 0.0,
+    "independent_traces": 2000,
+    "k": 20,
+    "method_a": "pgcm_oracle",
+    "method_b": "no_eligibility_gate",
+    "metric": "VER",
+    "replicates": 10000,
+    "seed": 20261008,
+    "undefined_replicates": 0
+  }
+]

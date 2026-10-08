@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+outputs/
+pgcm_experiments/outputs/
