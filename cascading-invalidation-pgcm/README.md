@@ -1,11 +1,69 @@
 # Cascading Invalidation in PG-CM: Reproduction Artifact
 
-This artifact validates the symbolic support-maintenance implementation and
-its structural conformance: a counter-based incremental engine
-(`src/pgcm_core.py`, Algorithm 1) checked transition-for-transition against
-an independent eager topological recomputation (`src/oracle_evaluator.py`)
-over 32,768 bounded configurations and 2,000 frozen structural traces
-(6,000 retraction events, seed 20261008).
+## Research summary for reviewers
+
+**Problem.** Long-lived AI assistants accumulate stated facts, plans, and
+permissions across turns, then silently act on stale ones: a retracted
+configuration keeps justifying a fallback plan, a withdrawn approval keeps
+authorizing an action, a superseded value keeps answering queries. This
+artifact studies *cascading invalidation*: when a root record is withdrawn,
+every derived record that loses all sufficient justifications must flip to
+unsupported, while records with surviving alternative justifications
+(OR-branches) must stay live.
+
+**Contribution.** A counter-based incremental maintenance engine
+(`src/pgcm_core.py`, Algorithm 1) with strict fail-closed admission, checked
+transition-for-transition against an independent eager topological
+recomputation (`src/oracle_evaluator.py`):
+
+- Each justification clause counts its currently-unsupported premises
+  (`missing`); each record counts its live clauses (`live`). A root
+  withdrawal touches only incident clauses, so propagation cost scales with
+  the affected region, not the graph.
+- Withdrawing one parent of an OR-branch does not invalidate the record
+  while another sufficient justification remains live (correction 1 of the
+  methodological audit).
+- Closure is measured against actual supported-to-unsupported state
+  transitions, excluding direct roots; candidate filtering is scored as a
+  separate operation (correction 2).
+- Retrieval is gated by support, scope, principal permissions, and creation
+  epoch; historical queries read a committed snapshot (correction 4).
+- Actions bind complete preconditions and scope in a trusted registry;
+  forbidden proposals are denied before any side effect (correction 5).
+- Malformed graphs, conflicting updates, duplicate records, cycles, and
+  future-dated premises are rejected at admission; the pipeline stops on any
+  mismatch rather than degrading silently.
+
+**What this artifact validates.**
+
+1. *Exact maintenance (this directory).* 32,768 bounded four-node support
+   configurations plus 2,000 frozen structural traces (6,000 retraction
+   events, seed 20261008): engine and oracle agree on every label
+   transition, with zero false invalidations. Counter-based propagation
+   processed 26,000 incidence visits versus 66,000 eager premise scans
+   (ratio 0.3939). Run `python reproduce_all.py`.
+2. *Retrieval and support maintenance (companion `pgcm_experiments/`).*
+   2,000 synthetic unreviewed integration fixtures, 336,000
+   query/method/K evaluations. At K=5 with the hash embedding control:
+   oracle CER/CEP/VER 100% with 84.53% coverage and 0% leakage; the
+   no-eligibility-gate ablation keeps perfect closure scores yet leaks
+   (96.37%) — closure without gating is not successful memory use; the
+   descendant-pruning control over-removes alternatives (VER 83.33%).
+   With pinned BGE-small-en-v1.5 embeddings (`results/`, revision
+   `5c38ec7c`): oracle stays exact with zero violations while no-gate
+   violations rise to 10–15% across K=5/10/20.
+3. *Actions and snapshots.* 800 scripted attempts: 0 forbidden executions,
+   400/400 permitted completed; 800 concurrent snapshot reads with
+   0 inconsistencies (single-host SQLite/WAL, in-process callbacks).
+
+**What this artifact does not claim.** The fixtures are synthetic and
+unreviewed — not a human-reviewed conversational benchmark. No live model
+was called; lineage-extraction, neural-retrieval (beyond the reported BGE
+replay), QA, published-system baselines, and deployment-latency evidence
+are still open (see `appendix/` and the audit's evidence table). Bootstrap
+intervals are controlled-fixture diagnostics, not deployment confidence.
+The original draft's 98.7% recall / 97.2% precision / 0.8% leakage figures
+had no supplied raw data and are not reproduced here.
 
 ## Prerequisites
 
